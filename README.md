@@ -2,6 +2,41 @@
  Dockerized SocialFish with uwsgi & nginx
 
 
+### USING GIT REPO
+
+```sh
+$ sudo git clone https://github.com/NOXCIS/Docker-Fish.git
+$ cd Docker-Fish
+```
+## CHANGE DEFAULT LOGIN CREDS & SECRET KEY
+
+```sh
+$ sudo chmod +x ChangePassword.sh
+
+$ sudo ./setup.sh
+
+$ docker-compose up --build
+```
+Login can be found on your_host_ip/neptune 
+Deafult username: kali 
+Deafult password: 1234
+
+
+
+
+
+### USING DOCKER
+
+
+Using image
+```sh
+$ sudo docker pull noxcis/docker-socialfish
+$ sudo docker run --publish 80:80 noxcis/docker-socialfish
+```
+Login can be found on your_host_ip/neptune 
+
+Deafult username: kali 
+Deafult password: 1234
 
 
 
