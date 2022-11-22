@@ -13,7 +13,7 @@ $ cd Docker-Fish
 ```sh
 $ sudo chmod +x ChangePassword.sh
 
-$ sudo ./setup.sh
+$ sudo ./ChangePassword.sh
 
 $ docker-compose up --build
 ```
