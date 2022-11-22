@@ -6,7 +6,7 @@ echo "#######################################################################"
         sleep 3s       
         nano main.py
 
-cd app/core/ &&
+cd core &&
 
  echo "#######################################################################"
         echo "|APPSECRET - CHANGE_KEY| MAKE WANTED CHANGES SAVE AND EXIT"
