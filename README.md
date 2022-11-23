@@ -1,3 +1,19 @@
+## Author of Docker-Fish
+
+👤 **Shamar Lee**
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/NOXCIS/wirehole-reloaded/issues). 
+
+## Show your support
+
+Give a ⭐ if this project helped you!
+
+
+<a href="https://www.paypal.com/donate?business=986V5GH5R5T4G&no_recurring=0&item_name=Buy+me+a+Coffee&currency_code=USD" target="_blank"><img src="https://i.imgur.com/6JvV0aR.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+
+
 # Docker-Fish
  Dockerized SocialFish with uwsgi & nginx
 
