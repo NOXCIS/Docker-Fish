@@ -25,15 +25,11 @@ Give a ⭐ if this project helped you!
 $ sudo git clone https://github.com/NOXCIS/Docker-Fish.git
 $ cd Docker-Fish
 ```
-# CHANGE DEFAULT LOGIN CREDS & SECRET KEY
+# CHANGE DEFAULT LOGIN CREDS 
 
-```sh
-$ sudo chmod +x ChangePassword.sh
+USE - UWSGI_PYARGV=test test
+To set password and user name.
 
-$ sudo ./ChangePassword.sh
-
-$ docker-compose up --build
-```
 #Login can be found on your_host_ip/neptune 
 
 Deafult username: kali 
