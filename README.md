@@ -19,17 +19,11 @@ Give a ⭐ if this project helped you!
  Dockerized SocialFish with uwsgi & nginx
 
 
-### USING GIT REPO
-
-```sh
-$ sudo git clone https://github.com/NOXCIS/Docker-Fish.git
-$ cd Docker-Fish
-```
 # CHANGE DEFAULT LOGIN CREDS 
 
-##USE - UWSGI_PYARGV=<test> <test>
+##USE ENVIOREMNT VARIABLE - UWSGI_PYARGV=username password
  
-To set password and user name.
+
 
 #Login can be found on your_host_ip/neptune 
 
