@@ -72,3 +72,4 @@ def initDB(DATABASE):
         conn.commit()
         conn.close()
         genQRCode(t)
+
