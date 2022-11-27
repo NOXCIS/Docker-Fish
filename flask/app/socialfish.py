@@ -1,17 +1,17 @@
 #!/usr/bin/env python3
 #
 from flask import Flask, request, render_template, jsonify, redirect, g, flash
-from core.config import *
-from core.view import head
-from core.scansf import nScan
-from core.clonesf import clone
-from core.dbsf import initDB
-from core.genToken import genToken, genQRCode
-from core.sendMail import sendMail
-from core.tracegeoIp import tracegeoIp
-from core.cleanFake import cleanFake
-from core.genReport import genReport
-from core.report import generate_unique #>> new line
+from app.core.config import *
+from app.core.view import head
+from app.core.scansf import nScan
+from app.core.clonesf import clone
+from app.core.dbsf import initDB
+from app.core.genToken import genToken, genQRCode
+from app.core.sendMail import sendMail
+from app.core.tracegeoIp import tracegeoIp
+from app.core.cleanFake import cleanFake
+from app.core.genReport import genReport
+from app.core.report import generate_unique #>> new line
 from datetime import date
 from sys import argv, exit, version_info
 import colorama
@@ -19,10 +19,17 @@ import sqlite3
 import flask_login
 import os
 
+
+
+
+
+
+
+
 ######################################################
 #################-----MAKE CHANGES-----###############
 ######################################################
-argv = ('notzero', 'kali', '1234')
+#argv = ('notzero', 'kali', '1234')
 #                    ^        ^
 #                    |        | 
 #              USER_NAME   PASSWORD
@@ -45,6 +52,9 @@ except IndexError:
 app = Flask(__name__, static_url_path='',
             static_folder='templates/static')
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
+
+initDB(DATABASE)
+
 
 # Inicia uma conexao com o banco antes de cada requisicao
 @app.before_request
@@ -546,7 +556,7 @@ def main():
         head()
         cleanFake()
         # Inicia o banco
-        initDB(DATABASE)
+       # initDB(DATABASE)
         app.run(host="0.0.0.0", port=80)
 
 if __name__ == "__main__":

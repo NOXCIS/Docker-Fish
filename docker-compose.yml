@@ -1,4 +1,18 @@
-version: '3'
+version: "3.7"
+
 services:
-  web:
-    build: ./
+
+  flask:
+    build: ./flask
+    container_name: flask
+    restart: always
+    expose:
+      - 5000
+    environment:
+    - UWSGI_PYARGV=test test
+
+  nginx:
+    build: ./nginx
+    restart: always
+    ports:
+      - "80:80"
