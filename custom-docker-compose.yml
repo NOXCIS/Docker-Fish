@@ -3,7 +3,7 @@ version: "3.7"
 services:
 
   flask:
-    image: noxcis/dockersocialfish-flask:latest
+    build: ./flask
     container_name: flask
     restart: always
     expose:
@@ -12,7 +12,7 @@ services:
     - UWSGI_PYARGV=test test
 
   nginx:
-    image: noxcis/dockersocialfish-nginx:latest
+    build: ./nginx
     restart: always
     ports:
       - "80:80"
