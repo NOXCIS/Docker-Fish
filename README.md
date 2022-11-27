@@ -44,15 +44,15 @@ Deafult password: 1234
 ### USING DOCKER
 
 
-Using image
+Using Compose
 ```sh
-$ sudo docker pull noxcis/docker-socialfish
-$ sudo docker run --publish 80:80 noxcis/docker-socialfish
+$ sudo git clone https://github.com/NOXCIS/Docker-SocialFish
+$ sudo docker compose up
 ```
 Login can be found on your_host_ip/neptune 
 
-Deafult username: kali 
-Deafult password: 1234
+Deafult username: username 
+Deafult password: password
 
 
 
