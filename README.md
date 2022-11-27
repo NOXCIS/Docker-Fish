@@ -27,7 +27,7 @@ $ cd Docker-Fish
 ```
 # CHANGE DEFAULT LOGIN CREDS 
 
-USE - UWSGI_PYARGV=test test
+USE - UWSGI_PYARGV=<test> <test>/br
 To set password and user name.
 
 #Login can be found on your_host_ip/neptune 
