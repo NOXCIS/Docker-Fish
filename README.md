@@ -24,18 +24,7 @@ Give a ⭐ if this project helped you!
 USE ENVIOREMNT VARIABLE - UWSGI_PYARGV=username password
  
 
-
 #Login can be found on your_host_ip/neptune 
-
-Deafult username: kali 
-
-Deafult password: 1234
-
-
-
-
-
-### USING DOCKER
 
 
 Using Compose
