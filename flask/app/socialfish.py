@@ -1,17 +1,17 @@
 #!/usr/bin/env python3
 #
 from flask import Flask, request, render_template, jsonify, redirect, g, flash
-from app.core.config import *
-from app.core.view import head
-from app.core.scansf import nScan
-from app.core.clonesf import clone
-from app.core.dbsf import initDB
-from app.core.genToken import genToken, genQRCode
-from app.core.sendMail import sendMail
-from app.core.tracegeoIp import tracegeoIp
-from app.core.cleanFake import cleanFake
-from app.core.genReport import genReport
-from app.core.report import generate_unique #>> new line
+from core.config import *
+from core.view import head
+from core.scansf import nScan
+from core.clonesf import clone
+from core.dbsf import initDB
+from core.genToken import genToken, genQRCode
+from core.sendMail import sendMail
+from core.tracegeoIp import tracegeoIp
+from core.cleanFake import cleanFake
+from core.genReport import genReport
+from core.report import generate_unique #>> new line
 from datetime import date
 from sys import argv, exit, version_info
 import colorama

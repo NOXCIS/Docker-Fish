@@ -2,7 +2,7 @@ FROM python:3.9.15-bullseye
 
 WORKDIR /app
 
-ADD . /app
+COPY ./app /app
 
 RUN pip install -r requirements.txt
 

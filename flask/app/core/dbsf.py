@@ -1,6 +1,6 @@
 import os
 import sqlite3
-from app.core.genToken import genToken, genQRCode
+from core.genToken import genToken, genQRCode
 
 def initDB(DATABASE):
     if not os.path.exists(DATABASE):
@@ -71,4 +71,4 @@ def initDB(DATABASE):
         cur.execute(create_table_sql5)
         conn.commit()
         conn.close()
-        #genQRCode(t)
+        genQRCode(t)

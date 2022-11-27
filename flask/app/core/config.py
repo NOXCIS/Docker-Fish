@@ -1,4 +1,4 @@
-from app.core.appSec import genApass
+from core.appSec import genApass
 
 
 # COMPRESS APP --------------------------------------------------------------------------------------------------

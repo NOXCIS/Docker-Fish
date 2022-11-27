@@ -18,3 +18,4 @@ simplejson
 urllib3
 uWSGI
 Werkzeug
+Pillow
