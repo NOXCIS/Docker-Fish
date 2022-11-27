@@ -9,7 +9,7 @@ services:
     expose:
       - 5000
     environment:
-    - UWSGI_PYARGV=test test
+    - UWSGI_PYARGV=username password
 
   nginx:
     image: noxcis/dockersocialfish-nginx:latest
