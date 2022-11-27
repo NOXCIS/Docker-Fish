@@ -21,7 +21,7 @@ Give a ⭐ if this project helped you!
 
 # CHANGE DEFAULT LOGIN CREDS 
 
-##USE ENVIOREMNT VARIABLE - UWSGI_PYARGV=username password
+USE ENVIOREMNT VARIABLE - UWSGI_PYARGV=username password
  
 
 
