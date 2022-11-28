@@ -20,23 +20,6 @@ import flask_login
 import os
 
 
-
-
-
-
-
-
-######################################################
-#################-----MAKE CHANGES-----###############
-######################################################
-#argv = ('notzero', 'kali', '1234')
-#                    ^        ^
-#                    |        | 
-#              USER_NAME   PASSWORD
-#######################################################
-#######################################################
-#######################################################
-
 # Verificar argumentos
 if len(argv) < 2:
     print("./SocialFish <youruser> <yourpassword>\n\ni.e.: ./SocialFish.py root pass")
@@ -52,6 +35,8 @@ except IndexError:
 app = Flask(__name__, static_url_path='',
             static_folder='templates/static')
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
+
+# Inicia o banco
 
 initDB(DATABASE)
 
@@ -555,8 +540,8 @@ def main():
             exit(0)
         head()
         cleanFake()
-        # Inicia o banco
-       # initDB(DATABASE)
+        
+       
         app.run(host="0.0.0.0", port=80)
 
 if __name__ == "__main__":
